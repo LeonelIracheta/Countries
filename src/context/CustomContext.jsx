@@ -15,8 +15,8 @@ export function CustomDataProvider({ children }) {
   const changeSideBar = () => {
     setShowSideBar(!showSideBar);
   }
-  const changeAbout = () => {
-    setShowAbout(!showAbout);
+  const changeAbout = (showIt) => {
+    setShowAbout(showIt);
   }
   const changeDarkMode = () => {
     setDarkMode(!darkMode);

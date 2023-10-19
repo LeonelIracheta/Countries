@@ -23,6 +23,7 @@ function SideBar() {
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
       changeCountry(inputValue);
+      changeAbout(false);
     }
   };
   const toggleSortMenu = () => {
@@ -30,21 +31,25 @@ function SideBar() {
   };
   const toggleSortAlphaAsc = () => {
     changeSort("AlphaAsc");
+    changeAbout(false);
   };
   const toggleSortAlphaDesc = () => {
     changeSort("AlphaDesc");
+    changeAbout(false);
   };
   const toggleSortPopMax = () => {
     changeSort("PopMax");
+    changeAbout(false);
   };
   const toggleSortPopMin = () => {
     changeSort("PopMin");
+    changeAbout(false);
   };
   const toggleDarkMode = () => {
     changeDarkMode();
   };
   const toggleAbout = () => {
-    changeAbout();
+    changeAbout(true)
   };
   
   return (
